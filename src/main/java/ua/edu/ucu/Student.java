@@ -36,10 +36,10 @@ class Student {
 
     @Override
     public String toString() {
-        return "Student{name=" + name + "," +
-                " surname=" + surname + ", " +
-                "GPA=" + GPA + ", " +
-                "year=" + year + '}';
+        return "Student{name=" + name + ","
+                + " surname=" + surname + ", "
+                + "GPA=" + GPA + ", "
+                + "year=" + year + '}';
     }
 
     public String getFullName() {
@@ -59,7 +59,7 @@ class Student {
                     getFullName().
                     equals(getFullName());
         }
-        catch (Exception e) {
+        catch (ClassCastException e) {
             return false;
         }
     }

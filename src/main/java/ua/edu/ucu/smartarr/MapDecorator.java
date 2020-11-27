@@ -5,7 +5,7 @@ import lombok.Setter;
 import ua.edu.ucu.functions.MyFunction;
 
 // Map every element to another object using MyFunction
-public class MapDecorator extends SmartArrayDecorator{
+public class MapDecorator extends SmartArrayDecorator {
     @Setter @Getter
     private MyFunction func;
 
